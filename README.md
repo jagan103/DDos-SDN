@@ -1,7 +1,7 @@
 ﻿# DDos-with-SDN-controller
 early detection and mitigation of DDos using centralized SDN controller POX
 
-=======
+========
 			Implementation steps
 
 Basically, an Openflow controller is connected to a network. We then observe the entropy of the traffic related to the controller under normal and attack conditions.
