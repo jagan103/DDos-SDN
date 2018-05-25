@@ -32,7 +32,6 @@ Now the project is divided into 2 parts ---1 packet generation and detection
 sudo apt-get install python-scapy
 ------------------------------------------------------------------------------------------------------------
 2. Test environment:
-
 a. Creation of a new python script for normal traffic generation in the folder mininet/custom
 $ cd mininet/custom
 $ vim launchTraffic.py
@@ -45,6 +44,7 @@ $ cd pox/pox/forwarding
 $ vim detection.py
 
 d. edit the l3_learning file in the forwarding folder of pox so that it will import entropy from detection script and changes to detect ddos Or replace the l3_learning file with the editted l3 file . 
+
 -------------------------------------------------------------------------------------------------------------
 
 3.Steps for performing the project task:
@@ -66,7 +66,7 @@ c. Now opening xterm for a host by typing the following command:
 mininet>xterm h1 h2 h3 h64
 
 d. In the xterm window of host h1 running the following command:
-# python launchTraffic.py –f 2 –l 65
+# python launchTraffic.py â€“f 2 â€“l 65
                   where f = first value and e = last value of the number of host to which we want to send packets.
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ Detection of DDoS threat using the value of Entropy:
 1.On xterm window of h64 entlaunchering the following commands:
 
 # script h64.txt
-# tcpdump –v	
+# tcpdump â€“v	
 
 
 --------------------------------------------------------------------------------------------------------------------------------
