@@ -1,7 +1,6 @@
-# DDos-with-SDN-controller
+﻿# DDos-with-SDN-controller
 early detection and mitigation of DDos using centralized SDN controller POX
 
-<<<<<<< HEAD
 =======
 			Implementation steps
 
@@ -98,4 +97,3 @@ after successful completion of the above steps,
 
 terminating tcpdump on h64 and Stop Mininet and pox controller.
 
->>>>>>> 8753569180fb011b4bddeb9503c9ba3436d4bf52
