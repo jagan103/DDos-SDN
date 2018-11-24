@@ -17,7 +17,7 @@ class Entropy(object):
 		entropylist = []
 		for k in list.values():
 			e = k/n
-			entropylist.append(-k * math.log10(k)
+			entropylist.append(-k * math.log10(k))
 			print 'entropy=',sum(entropylist)
 			self.dstEntropy.append(sum(entropylist))
 		if(len(self.dstEntropy)) == 70:
