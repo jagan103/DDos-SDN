@@ -73,7 +73,7 @@ d. In the xterm window of host h1 running the following command:
 ------------------------------------------------------------------------------------------------------------------------------
 Detection of DDoS threat using the value of Entropy:
 
-1.On xterm window of h64 entlaunchering the following commands:
+1.On xterm window of h64 enter the following commands:
 
 # script h64.txt
 # tcpdump –v	
