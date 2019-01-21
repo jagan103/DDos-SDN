@@ -67,7 +67,7 @@ c. Now opening xterm for a host by typing the following command:
 mininet>xterm h1 h2 h3 h64
 
 d. In the xterm window of host h1 running the following command:
-# python launchTraffic.py –f 2 –l 65
+# python launchTraffic.py –f 2 –e 65
                   where f = first value and e = last value of the number of host to which we want to send packets.
 
 ------------------------------------------------------------------------------------------------------------------------------
